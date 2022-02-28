@@ -48,3 +48,24 @@ const moreAvengers = {
 const {blackWidow: nat, ...other} = moreAvengers;
 
 console.log(nat, other);
+
+// Bonus 
+const bonus = {
+    first: [1, 2, 3],
+    second: [4, 5, 6],
+    third: [7, 8, 9]
+};
+
+const all = [
+    ...bonus.first, 
+    ...bonus.second,
+    ...bonus.third
+];
+
+console.log(all);
+
+const {first, second, third} = bonus;
+const [one, two, three] = first;
+const [four, five, six] = second;
+const [seven, eight, nine] = third;
+console.log(one, two, three, four, five, six, seven, eight, nine);
